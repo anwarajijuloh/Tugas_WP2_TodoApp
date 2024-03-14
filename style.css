@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+}
+
+.app{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #EEEEEE;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+p{
+  font-size: 8px;
+  display:flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 30px;
+  color: #31363F;
+}
+
+.title img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+input, textarea, button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #31363F;
+  color: #EEEEEE;
+  font-style: italic;
+  border-radius: 20px;
+  margin: 0 15px 15px;
+  font-family: 'Inter';
+}
+
+button{
+  background: #12372A;
+  cursor: pointer;
+  font-weight: 500;
+  font-style: normal;
+  color: #EEE;
+}
+
+button:hover{
+  background: #436850;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
+}
+
+#todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction:column;
+  background: #fff;
+  margin:0;
+  padding:0;
+}
+
+.todo-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.text, .btn{
+  display: flex;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.text .titItem{
+  font-size: 14px;
+  font-weight: bold;
+}
+.text .desItem{
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+}
+.btn-edit, .btn-delete{
+  margin:2px;
+  padding:4px;
+  border-radius: 6px;
+  font-size:18px;
+  cursor: pointer;
+  color: #EEE
+}
+
+.btn-edit{
+  background: #007F73;
+}
+.btn-edit:hover{
+  background: #4CCD99;
+}
+.btn-delete{
+  background: #7D0A0A;
+}
+.btn-delete:hover{
+  background: #BF3131;
+}
+
