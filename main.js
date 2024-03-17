@@ -1,6 +1,6 @@
 var todos = [];
-var savedTodos = localStorage.getItem("todos");
-savedTodos = JSON.parse(savedTodos);
+// var savedTodos = localStorage.getItem("todos");
+// savedTodos = JSON.parse(savedTodos);
 
 const createTodo = (title, descrip) => {
   const id = todos.length + 1;
@@ -111,17 +111,17 @@ const renderTodo = () => {
     } else {
       const editText = document.createElement("h4");
       editText.innerText = "Edit Todo";
-      todoText.appendChild(editText);
+      todoList.appendChild(editText);
 
       const inputTitleEdit = document.createElement("input");
       inputTitleEdit.placeholder = "Edit title";
       inputTitleEdit.value = todo.title;
-      todoText.appendChild(inputTitleEdit);
+      todoList.appendChild(inputTitleEdit);
 
       const inputDescripEdit = document.createElement("input");
       inputDescripEdit.placeholder = "Edit description";
       inputDescripEdit.value = todo.descrip;
-      todoText.appendChild(inputDescripEdit);
+      todoList.appendChild(inputDescripEdit);
 
       const updateButton = document.createElement("button");
       updateButton.innerText = "Update";
@@ -130,7 +130,7 @@ const renderTodo = () => {
         inputTitleEdit,
         inputDescripEdit
       );
-      todoText.appendChild(updateButton);
+      todoList.appendChild(updateButton);
     }
     todoList.appendChild(todoItems);
   });
